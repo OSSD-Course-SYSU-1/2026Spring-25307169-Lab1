@@ -253,12 +253,6 @@ entry/
 - **SDK 版本**: HarmonyOS 5.0.5 Release SDK
 - **依赖管理**: oh-package.json5（当前无外部依赖）
 
-### 10. 应用截图
-
-项目包含应用效果演示截图：
-- `screenshots/device/text_effects.gif` - 中文版效果演示
-- `screenshots/device/text_effects.en.gif` - 英文版效果演示
-
 ## 总结
 
 Text Effects 应用是一个结构清晰、设计合理的 HarmonyOS 应用示例。它展示了如何使用 ArkTS 语言和 HarmonyOS 的 Text 组件及通用属性实现各种文字特效。项目采用了标准的 HarmonyOS 应用结构，具有良好的可维护性和可扩展性。
