@@ -1,0 +1,18 @@
+# HarmonyOS IDE and build cache
+.hvigor/
+.idea/
+.preview/
+*.protoBin
+.tsbuildinfo
+cache/
+
+# Build outputs
+build/
+oh_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Other
+*.zip
