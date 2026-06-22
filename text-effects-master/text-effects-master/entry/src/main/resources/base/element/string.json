@@ -41,6 +41,30 @@
       "value": "The scrolling light gradient effect."
     },
     {
+      "name": "text_wave",
+      "value": "Text wave animation effect."
+    },
+    {
+      "name": "text_neon",
+      "value": "Text neon glow effect."
+    },
+    {
+      "name": "text_typewriter",
+      "value": "Text typewriter effect."
+    },
+    {
+      "name": "text_glitch",
+      "value": "Text glitch effect."
+    },
+    {
+      "name": "text_bounce",
+      "value": "Text bounce effect."
+    },
+    {
+      "name": "text_particle",
+      "value": "Text particle explosion effect."
+    },
+    {
       "name": "title",
       "value": "Text Effect Collection"
     }

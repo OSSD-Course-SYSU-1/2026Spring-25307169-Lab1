@@ -14,10 +14,16 @@
  */
 
 import Constants from '../constants/Constants';
+import TextBounceView from '../view/TextBounceView';
+import TextGlitchView from '../view/TextGlitchView';
 import TextGradientView from '../view/TextGradientView';
 import TextMarqueeView from '../view/TextMarqueeView';
+import TextNeonView from '../view/TextNeonView';
+import TextParticleView from '../view/TextParticleView';
 import TextReflectionView from '../view/TextReflectionView';
 import TextScrollingView from '../view/TextScrollingView';
+import TextTypewriterView from '../view/TextTypewriterView';
+import TextWaveView from '../view/TextWaveView';
 
 @Entry
 @Component
@@ -54,39 +60,79 @@ struct Index {
 
   build() {
     Navigation() {
-      Column() {
-        this.textBuilder($r('app.string.text_gradient'))
-        Row() {
-          TextGradientView({ message: this.message })
-        }
-        .fancy()
-        .justifyContent(FlexAlign.Center)
+      Scroll() {
+        Column() {
+          this.textBuilder($r('app.string.text_gradient'))
+          Row() {
+            TextGradientView({ message: this.message })
+          }
+          .fancy()
+          .justifyContent(FlexAlign.Center)
 
-        this.textBuilder($r('app.string.text_scrolling'))
-        Row() {
-          TextScrollingView({ message: this.message })
-        }
-        .fancy()
-        .justifyContent(FlexAlign.Center)
+          this.textBuilder($r('app.string.text_scrolling'))
+          Row() {
+            TextScrollingView({ message: this.message })
+          }
+          .fancy()
+          .justifyContent(FlexAlign.Center)
 
-        this.textBuilder($r('app.string.text_reflection'))
-        Row() {
-          TextReflectionView({ message: this.message })
-        }
-        .fancy()
-        .justifyContent(FlexAlign.Center)
+          this.textBuilder($r('app.string.text_reflection'))
+          Row() {
+            TextReflectionView({ message: this.message })
+          }
+          .fancy()
+          .justifyContent(FlexAlign.Center)
 
-        this.textBuilder($r('app.string.text_marquee'))
-        Row() {
-          TextMarqueeView({ message: this.messageLong })
+          this.textBuilder($r('app.string.text_marquee'))
+          Row() {
+            TextMarqueeView({ message: this.messageLong })
+          }
+          .fancy()
+          .justifyContent(FlexAlign.Center)
+
+          this.textBuilder($r('app.string.text_wave'))
+          Row() {
+            TextWaveView({ message: this.message })
+          }
+          .fancy()
+          .justifyContent(FlexAlign.Center)
+
+          this.textBuilder($r('app.string.text_neon'))
+          TextNeonView({ message: this.message })
+
+          this.textBuilder($r('app.string.text_typewriter'))
+          Row() {
+            TextTypewriterView({ message: this.message })
+          }
+          .fancy()
+          .justifyContent(FlexAlign.Center)
+
+          this.textBuilder($r('app.string.text_glitch'))
+          Row() {
+            TextGlitchView({ message: this.message })
+          }
+          .fancy()
+          .justifyContent(FlexAlign.Center)
+
+          this.textBuilder($r('app.string.text_bounce'))
+          Row() {
+            TextBounceView({ message: this.message })
+          }
+          .fancy()
+          .justifyContent(FlexAlign.Center)
+
+          this.textBuilder($r('app.string.text_particle'))
+          TextParticleView({ message: this.message })
         }
-        .fancy()
-        .justifyContent(FlexAlign.Center)
+        .padding({
+          left: $r('app.float.area_padding_left'),
+          right: $r('app.float.area_padding_left')
+        })
       }
-      .padding({
-        left: $r('app.float.area_padding_left'),
-        right: $r('app.float.area_padding_left')
-      })
+      .scrollBar(BarState.Auto)
+      .edgeEffect(EdgeEffect.Spring)
+      .width(Constants.FULL_PERCENT)
+      .height(Constants.FULL_PERCENT)
     }
     .height(Constants.FULL_PERCENT)
     .width(Constants.FULL_PERCENT)

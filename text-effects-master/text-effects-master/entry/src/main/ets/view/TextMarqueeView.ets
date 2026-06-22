@@ -16,7 +16,7 @@
 import Constants from '../constants/Constants';
 
 @Component
-export default struct TextGradientView {
+export default struct TextMarqueeView {
   @State message: ResourceStr = '';
 
   build() {

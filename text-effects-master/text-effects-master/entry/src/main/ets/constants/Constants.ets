@@ -43,4 +43,14 @@ export default class Constants {
    * Font weight 500.
    */
   static readonly FONT_WEIGHT_500: number = 500;
+
+  /**
+   * Wave animation duration.
+   */
+  static readonly WAVE_ANIMATION_DURATION: number = 2000;
+
+  /**
+   * Wave amplitude animation duration.
+   */
+  static readonly WAVE_AMPLITUDE_DURATION: number = 1500;
 }

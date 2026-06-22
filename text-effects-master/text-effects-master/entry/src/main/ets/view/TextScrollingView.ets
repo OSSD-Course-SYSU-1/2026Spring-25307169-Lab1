@@ -38,7 +38,7 @@ export default struct TextScrollingView {
       height: 0
     })
     .onAppear(() => {
-      this.getUIContext().animateTo({
+      animateTo({
         duration: Constants.TEXT_SCROLL_DURATION,
         finishCallbackType: FinishCallbackType.LOGICALLY,
         curve: Curve.Linear,

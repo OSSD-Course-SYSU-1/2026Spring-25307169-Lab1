@@ -16,7 +16,7 @@
 import Constants from '../constants/Constants';
 
 @Component
-export default struct TextRefectionView {
+export default struct TextReflectionView {
   @State message: ResourceStr = '';
 
   build() {

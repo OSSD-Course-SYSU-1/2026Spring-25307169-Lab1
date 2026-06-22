@@ -39,6 +39,10 @@
     {
       "name": "area_padding_left",
       "value": "16vp"
+    },
+    {
+      "name": "text_wave_height",
+      "value": "80vp"
     }
   ]
 }
